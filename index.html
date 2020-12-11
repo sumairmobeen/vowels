@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOWELS SEPRATION FUNCTION</title>
+</head>
+<body>
+
+	<h1> VOWELS SEPRATION FUNCTION</h1>
+	<br> 
+	<br>
+    <form onsubmit="return vowelsGets()">
+<input type="text" id="num1" placeholder="enter number">
+<button>Check</button>
+
+</form>
+
+
+<script>
+    function vowelsGets(stg) { 
+	for (var i in stg.split('')) { 
+		if (['a', 'e', 'i', 'o', 'u'].includes(stg.split('')[i])) { 
+			console.log(stg.split('')[i]); 
+		} 
+	} 
+	for (var i in stg.split('')) { 
+		if (!(['a', 'e', 'i', 'o', 'u'].includes(stg.split('')[i]))) { 
+			console.log(stg.split('')[i]); 
+		} 
+	} 
+    return false;
+} 
+
+    </script>
+    
+</body>
+</html>
